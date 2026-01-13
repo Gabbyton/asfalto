@@ -18,19 +18,26 @@ ls "$JMODS_PATH"
 # 3. Create a minimal JRE
 # We explicitly add the --module-path pointing to the JMODS folder
 # 1. Find which modules the JAR actually uses
-echo "Analyzing JAR dependencies..."
-MODULES=$(jdeps --ignore-missing-deps --print-module-deps /io/src/asfalto/bin/robot.jar 2>/dev/null | grep -v "Warning" | tr -d '\n\r ')
+echo "Analyzing dependencies for ALL jars..."
 
-# 2. Safety check: ensure java.base is included and the string isn't empty
-if [ -z "$MODULES" ]; then
-    MODULES="java.base"
-else
-    # Remove any potential trailing commas and add java.base if not present
-    MODULES="${MODULES},java.base"
-fi
+# 1. Define the location of your JARs
+JAR_DIR="/io/src/asfalto/bin"
 
-echo "Cleaned Modules list: $MODULES"
+# 2. Pass BOTH jars to jdeps simultaneously
+# We use a wildcard or list them explicitly.
+# --class-path tells jdeps to look in the same folder if they depend on each other.
+MODULES=$(jdeps \
+    --ignore-missing-deps \
+    --print-module-deps \
+    --multi-release 17 \
+    --class-path "$JAR_DIR/*" \
+    "$JAR_DIR/engine.jar" "$JAR_DIR/helper.jar" \
+    2>/dev/null | grep -v "Warning" | tr -d '\n\r ')
 
+# 3. Safety check (ensure java.base is always there)
+if [ -z "$MODULES" ]; then MODULES="java.base"; else MODULES="${MODULES},java.base"; fi
+
+echo "Combined Modules: $MODULES"
 # 3. Create the JRE
 # Clear previous output directory if it exists
 rm -rf /io/src/asfalto/bin/jre

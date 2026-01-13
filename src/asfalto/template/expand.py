@@ -3,7 +3,6 @@ import io
 import re
 import shutil
 import subprocess
-import sys
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
@@ -13,6 +12,7 @@ from rdflib.namespace import split_uri
 
 from asfalto.template.constants import IRI_VALUE
 from asfalto.template.io import get_default_prefixes
+from asfalto.imports.java import get_lutra_path
 from asfalto.template.preprocessing import (
     get_prefix_ttl_file_str,
     get_abbrev_term_from_str,
@@ -193,7 +193,7 @@ def expand_template(
                 sheet_instance_file_path.stem.replace("-template_sheet", "-template")
             ).with_suffix(".stottr")
 
-        lutra_path = "java -jar /Users/gponon/bin/lutra.jar"
+        lutra_path = get_lutra_path()
         lutra_cmd = f"""
             {lutra_path} -I stottr -l {template_file_path} \
             -L stottr -o {output_file_path} \

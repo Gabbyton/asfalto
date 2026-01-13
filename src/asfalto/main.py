@@ -1,12 +1,12 @@
 import argparse
 import sys
 
-import asfalto.cli.gen_template as gen_temp
 import asfalto.cli.expand_template as exp_temp
+import asfalto.cli.gen_template as gen_temp
 import asfalto.cli.merge_template_files as merge_files
-from asfalto.cli.constants import header
-import asfalto.cli.verify as verify
 import asfalto.cli.normalize as normalize
+import asfalto.cli.verify as verify
+from asfalto.cli.constants import header
 
 
 def main():

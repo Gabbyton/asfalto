@@ -33,7 +33,6 @@ Homepage = "https://github.com/pypa/sampleproject"
 Issues = "https://github.com/pypa/sampleproject/issues"
 
 [project.scripts]
-asfalto-robot = "asfalto.main:run_robot"
 asfalto = "asfalto.main:main"
 
 [tool.setuptools.package-data]

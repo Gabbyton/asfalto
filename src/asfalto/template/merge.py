@@ -1,6 +1,7 @@
 import subprocess
 from pathlib import Path
 from tempfile import NamedTemporaryFile
+from asfalto.imports.java import get_robot_path
 
 import rdflib
 from rdflib import URIRef
@@ -40,7 +41,7 @@ def merge(working_dir: str | Path, include_refs: bool = False) -> None:
             mode="w+", encoding="utf-8", suffix=".ttl"
         ) as ref_merged_file,
     ):
-        robot_path = "/Users/gponon/bin/robot"
+        robot_path = get_robot_path()
         header, ref_path = next(iter(required_files.items()))
         output_path = ref_path.with_name(
             f"{ref_path.stem.replace(f'-{header}', '-final')}.ttl"

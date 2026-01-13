@@ -5,6 +5,7 @@ from tempfile import NamedTemporaryFile
 from cemento.rdf.drawio_to_rdf import convert_drawio_to_rdf
 from rdflib import Graph, URIRef
 
+from asfalto.imports.java import get_robot_path
 from asfalto.template.io import get_refs_graph
 
 
@@ -68,7 +69,7 @@ def verify_template(
         term_list_file.flush()
 
         reason_cmd = f"""
-            robot extract --method BOT \
+            {get_robot_path()} extract --method BOT \
             --input {ref_graph_file.name} \
             --term-file {term_list_file.name} \
             merge --input {all_graph_file.name} \
