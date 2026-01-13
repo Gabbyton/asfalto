@@ -5,26 +5,36 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "asfalto-test"
 version = "0.1.0"
-authors = [
-  { name="Example Author", email="author@example.com" },
-]
-description = "Add your description here"
+authors = [{ name = "Gabriel Obsequio Ponon", email = "gop2@case.edu" }]
+description = "A package to create, generate and use ontology templates."
 readme = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-license = "MIT"
+license = "BSD-3-Clause"
 license-files = ["LICEN[CS]E*"]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "argo-proxy>=2.7.7",
+    "black>=25.9.0",
+    "build>=1.3.0",
+    "cemento>=0.13.0",
+    "importlib>=1.0.4",
+    "more-itertools>=10.8.0",
+    "openai>=2.2.0",
+    "openpyxl>=3.1.5",
+    "rdflib>=7.2.1",
+    "setuptools>=80.9.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/pypa/sampleproject"
 Issues = "https://github.com/pypa/sampleproject/issues"
 
 [project.scripts]
-asfalto = "asfalto.main:run_robot"
+asfalto-robot = "asfalto.main:run_robot"
+asfalto = "asfalto.main:main"
 
 [tool.setuptools.package-data]
 # This ensures the JAR is included in the installation

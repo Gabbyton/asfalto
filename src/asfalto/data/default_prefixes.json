@@ -1,0 +1,17 @@
+{
+  "cco": "https://www.commoncoreontologies.org/",
+  "dcterms": "http://purl.org/dc/terms/",
+  "mds": "https://cwrusdle.bitbucket.io/mds/",
+  "obo": "http://purl.obolibrary.org/obo/",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "ottr": "http://ns.ottr.xyz/0.4/",
+  "ax": "http://tpl.ottr.xyz/owl/axiom/0.1/",
+  "o-rdfs": "http://tpl.ottr.xyz/rdfs/0.2/",
+  "rstr": "http://tpl.ottr.xyz/owl/restriction/0.1/",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "dbp": "http://dbpedia.org/ontology/"
+}

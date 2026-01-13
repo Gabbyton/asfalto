@@ -1,7 +1,5 @@
 # Packaging Java with the wheel
 
-
-
 ## Script for building
 
 ```{bash}

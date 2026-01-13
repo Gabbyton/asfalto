@@ -1,37 +1,41 @@
-import subprocess
+import argparse
 import sys
-from importlib.resources import files
 
-def get_java_executable():
-    # Check for bundled JRE inside our package
-    bundled_jre = files('asfalto.bin').joinpath('jre/bin/java')
-    
-    if bundled_jre.exists():
-        # Ensure it's executable (sometimes lost in ZIP/Wheels)
-        import os
-        os.chmod(str(bundled_jre), 0o755)
-        return str(bundled_jre)
-    
-    return "java"  # Fallback to system path
+import asfalto.cli.gen_template as gen_temp
+import asfalto.cli.expand_template as exp_temp
+import asfalto.cli.merge_template_files as merge_files
+from asfalto.cli.constants import header
+import asfalto.cli.verify as verify
+import asfalto.cli.normalize as normalize
 
-def run_robot():
-    # 1. Locate the JAR file inside the installed package
-    # This works even if the package is zipped or installed in a virtualenv
-    java_bin = get_java_executable()
-    jar_path = files('asfalto.bin').joinpath('robot.jar')
-    
-    # 2. Build the command
-    # We pass along any arguments provided to the shell command (sys.argv[1:])
-    cmd = [java_bin, "-jar", str(jar_path)] + sys.argv[1:]
-    
-    try:
-        # 3. Execute
-        subprocess.run(cmd, check=True)
-    except FileNotFoundError:
-        print("Error: Java is not installed or not in PATH.", file=sys.stderr)
+
+def main():
+    parser = argparse.ArgumentParser(
+        prog="asfalto",
+        description=header,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+
+    subparsers = parser.add_subparsers(
+        dest="asfalto", metavar="subcommand", title="Available functions", required=True
+    )
+    subparsers.required = True
+
+    gen_temp.register(subparsers)
+    exp_temp.register(subparsers)
+    merge_files.register(subparsers)
+    verify.register(subparsers)
+    normalize.register(subparsers)
+
+    if len(sys.argv) <= 1:
+        parser.print_help()
         sys.exit(1)
-    except subprocess.CalledProcessError as e:
-        sys.exit(e.returncode)
+
+    args = parser.parse_args()
+
+    if hasattr(args, "_handler"):
+        args._handler(args)
+
 
 if __name__ == "__main__":
-    run_robot()
+    main()
