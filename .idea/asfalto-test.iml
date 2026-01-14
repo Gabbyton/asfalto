@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="jdk" jdkName="uv (asfalto-test)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Components" />
+    <orderEntry type="module" module-name="motor" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />

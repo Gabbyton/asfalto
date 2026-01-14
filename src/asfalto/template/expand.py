@@ -3,6 +3,7 @@ import io
 import re
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
@@ -108,10 +109,27 @@ def expand_template(
 
     # remove the metadata line for template name
     template = lines.pop(0)[1]
-    types = dict(zip(lines[0], lines[1], strict=True))
+    types = dict(zip(lines[0], lines[1], strict=False))
     literals = filter(lambda item: item[1] != IRI_VALUE, types.items())
     literals = set(map(lambda item: item[0], literals))
     df = pd.DataFrame(lines[2:], columns=lines[0])
+
+    # get template from working directory if template not specified
+    if template_file_path is None:
+        template_file_path = sheet_instance_file_path.with_stem(
+            sheet_instance_file_path.stem.replace("-template_sheet", "-template")
+        ).with_suffix(".stottr")
+
+    # read the original template file to get proper variable order
+    orig_headers = []
+    with open(template_file_path, 'r') as template_file:
+        contents = template_file.read()
+        if match := re.search(r'\[(.*)\] :: ', contents):
+            orig_headers = match.group(1).split(',')
+            orig_headers = [header.replace("?", "").strip() for header in orig_headers]
+
+    # reorder the headers based on the original
+    df = df[orig_headers]
 
     # prepare for term search if input is a class
     search_keys = get_search_keys(inv_prefixes)
@@ -186,12 +204,6 @@ def expand_template(
                 f"{sheet_instance_file_path.stem.replace('-template_sheet', '-debug')}"
             ).with_suffix(".stottr")
             shutil.copy(temp_instance_file.name, debug_file_path)
-
-        # get template from working directory if template not specified
-        if template_file_path is None:
-            template_file_path = sheet_instance_file_path.with_stem(
-                sheet_instance_file_path.stem.replace("-template_sheet", "-template")
-            ).with_suffix(".stottr")
 
         lutra_path = get_lutra_path()
         lutra_cmd = f"""
