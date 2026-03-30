@@ -6,10 +6,14 @@ import asfalto.cli.gen_template as gen_temp
 import asfalto.cli.merge_template_files as merge_files
 import asfalto.cli.normalize as normalize
 import asfalto.cli.verify as verify
+import asfalto.cli.setup_java as setup_java
+from asfalto.imports.download import check_dependencies
 from asfalto.cli.constants import header
 
 
 def main():
+    check_dependencies()
+
     parser = argparse.ArgumentParser(
         prog="asfalto",
         description=header,
@@ -26,6 +30,7 @@ def main():
     merge_files.register(subparsers)
     verify.register(subparsers)
     normalize.register(subparsers)
+    setup_java.register(subparsers)
 
     if len(sys.argv) <= 1:
         parser.print_help()

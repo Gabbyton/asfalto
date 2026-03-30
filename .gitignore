@@ -9,3 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .idea
+
+# exclude binary files
+src/asfalto/bin/
+.DS_Store

@@ -36,9 +36,8 @@ Issues = "https://github.com/Gabbyton/asfalto/issues"
 [project.scripts]
 asfalto = "asfalto.main:main"
 
-[tool.setuptools.package-data]
-# This ensures the JAR is included in the installation
-"asfalto.bin" = ["*.jar", "jre/**"]
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [dependency-groups]
 dev = [
