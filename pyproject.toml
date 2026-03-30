@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "asfalto-test"
-version = "0.1.0"
+name = "asfalto"
+version = "0.1.1"
 authors = [{ name = "Gabriel Obsequio Ponon", email = "gop2@case.edu" }]
 description = "A package to create, generate and use ontology templates."
 readme = "README.md"

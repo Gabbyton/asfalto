@@ -27,8 +27,13 @@ pip install asfalto
 
 The `ASFALTO` package uses the `lutra` and `ROBOT` packages under the hood. The package checks if these two Java-based dependencies are cached into your system. You may need an internet connection for the first time of use to be able to download and cache these two packages.
 
-## Typical Workflow
+# Typical Workflow
 
 To be added on the documentation page.
 
-# Licesne 
+# License
+This project was released under the BSD-3-Clause License. For more information about the license, please check the attached `LICENSE.md` file.
+
+# Third-party Licenses
+
+For information about third-party licenses for packages used in this project, please refer to the `THIRD_PARTY_LICENSES.txt` file.
