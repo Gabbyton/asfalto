@@ -17,5 +17,5 @@ header = rf"""
 ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝    ╚═════╝ 
 
 {get_version()}. Accelerating ontology creation for beamline data.
-Copyright 2025 APS-XSD Argonne National Laboratory
+Copyright 2025 Gabriel Obsequio Ponon
 """

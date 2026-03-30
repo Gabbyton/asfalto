@@ -8,8 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
-.idea
 
-# exclude binary files
-src/asfalto/bin/
+# IDE files
+.idea/*
+
+# Hidden files
 .DS_Store
