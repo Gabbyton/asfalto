@@ -30,8 +30,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/Gabbyton/asfalto"
+Issues = "https://github.com/Gabbyton/asfalto/issues"
 
 [project.scripts]
 asfalto = "asfalto.main:main"
@@ -39,3 +39,8 @@ asfalto = "asfalto.main:main"
 [tool.setuptools.package-data]
 # This ensures the JAR is included in the installation
 "asfalto.bin" = ["*.jar", "jre/**"]
+
+[dependency-groups]
+dev = [
+    "pip-licenses>=5.5.5",
+]
