@@ -1,4 +1,4 @@
-Copyright 2025 APS-XSD Argonne National Laboratory
+Copyright 2025 Gabriel Ponon
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
