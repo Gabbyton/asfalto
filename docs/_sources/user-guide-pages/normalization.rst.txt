@@ -8,7 +8,7 @@ This is because the EPICS variable term is actually a reference to another templ
 
 You can check this template file with the diagram below. This is our original diagram with the template part highlighted:
 
-.. iframe:: https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2asfalto%2Frefs%2Fheads%2Fmain%2Ffigures%2Fdo-not-input-this-motor-example-fig-3.drawio
+.. iframe:: https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2Fasfalto%2Frefs%2Fheads%2Fmain%2Ffigures%2Fdo-not-input-this-motor-example-fig-3.drawio
     :height: auto
     :width: 100%
     :aspectratio: 1.77

@@ -6,8 +6,8 @@ In the previous section, we showed you how to create and design a template diagr
 
 In case you need it, we will be using the following produced in the last section for this tutorial:
 
-#. :download:`motor.ttl <https://raw.githubusercontent.com/Gabbyton/asfalto/refs/heads/master/examples/motor-example/motor.ttl>`
-#. :download:`motor-template_sheet.csv (blank) <https://raw.githubusercontent.com/Gabbyton/asfalto/refs/heads/master/examples/motor-example/motor-template_sheet.csv>`.
+#. :download:`motor.ttl <https://raw.githubusercontent.com/Gabbyton/asfalto/refs/heads/main/examples/motor-example/motor.ttl>`
+#. :download:`motor-template_sheet.csv (blank) <https://raw.githubusercontent.com/Gabbyton/asfalto/refs/heads/main/examples/motor-example/motor-template_sheet.csv>`.
 
 Having trouble? Download the figure above as an
 
