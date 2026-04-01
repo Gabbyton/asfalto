@@ -9,7 +9,7 @@ The Data
 
 The full diagram can be found below:
 
-.. iframe:: https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2asfalto%2Frefs%2Fheads%2Fmaster%2Ffigures%2Fdo-not-input-this-slit-motor-example-fig-1.drawio
+.. iframe:: https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2asfalto%2Frefs%2Fheads%2Fmain%2Ffigures%2Fdo-not-input-this-slit-motor-example-fig-1.drawio
     :height: auto
     :width: 100%
     :aspectratio: 1.77
