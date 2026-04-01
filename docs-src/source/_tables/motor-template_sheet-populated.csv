@@ -1,0 +1,7 @@
+template,mds:BeamlineMotorTemplate
+BeamlineMotor,BeamlineMotorAxis,BeamlineMotorAxisDesignator,BeamlineMotorIdentifier,BeamlineMotorIdentifierValue,BeamlineMotorIndex,BeamlineMotorIndexValue,LabelOfBeamlineMotorPositionIdentifierValue
+iri,iri,iri,iri,xsd:string,iri,xsd:string,xsd:string
+Motor 1,cco:x-Axis,,,m1,,1,xid:m1.RBV
+Motor 15,cco:z-Axis,,,m15,,2,xid:m15.RBV
+Motor 101,cco:y-Axis,,,m101,,3,xid:m101.RBV
+Virtual Motor 7,mds:tilt-Axis,,,,,,xid:v7:2:A1

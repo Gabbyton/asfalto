@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="p18HNdbMJ-JnuOnIYek8">
+    <mxGraphModel dx="1412" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mt3QaFebBZgf79oGW9HI-14" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-12" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-40" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-39" value="rfds:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Component Brand" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Beamline Slit Brand" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-17" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-16" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rdf:type&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Beamline Slit Orientation" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-19" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-18" value="rdfs:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Slit Orientation" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Spatial Orientation" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-25" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-24" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-41" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="mt3QaFebBZgf79oGW9HI-13" value="cco:designated by">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-44" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="mt3QaFebBZgf79oGW9HI-15" value="obo:bearer of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0pv7fM9auYfnDVNZ0FBV-2" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="0pv7fM9auYfnDVNZ0FBV-1" value="mds:isTemplateHead">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Beamline Slit" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-28" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-27" value="rdfs:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-38" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mt3QaFebBZgf79oGW9HI-31" value="ms:equivalentTo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Slit" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-30" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-29" value="rdfs:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Beamline Optic" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Material Artifact" vertex="1">
+          <mxGeometry height="60" width="120" x="470" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-33" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-32" value="ms:onProperty">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="owl:Restriction" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-35" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-34" value="ms:min">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="obo:bearer of" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-37" edge="1" parent="1" source="mt3QaFebBZgf79oGW9HI-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mt3QaFebBZgf79oGW9HI-36" value="ms:of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&quot;1&quot;^^xsd:integer" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mds:Slit Orientation" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="mt3QaFebBZgf79oGW9HI-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Name" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="0pv7fM9auYfnDVNZ0FBV-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Beamline Slit Template" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="650" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

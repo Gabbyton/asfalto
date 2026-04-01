@@ -1,0 +1,37 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="TWIeKCokP7RbeJ-bWS-q">
+    <mxGraphModel dx="562" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-26" edge="1" parent="1" source="pEYSx8jZ0eI-IRqXfqmY-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="pEYSx8jZ0eI-IRqXfqmY-25" value="mds:has trait">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Quality Class Member" vertex="1">
+          <mxGeometry height="60" width="120" x="1090" y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mds:QualityPersonTemplate" vertex="1">
+          <mxGeometry height="60" width="120" x="1295" y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-35" edge="1" parent="1" source="pEYSx8jZ0eI-IRqXfqmY-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="pEYSx8jZ0eI-IRqXfqmY-34" value="mds:isTemplateHead">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-38" edge="1" parent="1" source="pEYSx8jZ0eI-IRqXfqmY-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="pEYSx8jZ0eI-IRqXfqmY-37" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rV6PM1SQvDd0fFyNeTsm-1" edge="1" parent="1" source="pEYSx8jZ0eI-IRqXfqmY-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="pEYSx8jZ0eI-IRqXfqmY-29" value="obo:member part of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Quality Class" vertex="1">
+          <mxGeometry height="60" width="120" x="1090" y="-600" as="geometry" />
+        </mxCell>
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mds:QualityClassTemplate" vertex="1">
+          <mxGeometry height="60" width="120" x="930" y="-740" as="geometry" />
+        </mxCell>
+        <mxCell id="pEYSx8jZ0eI-IRqXfqmY-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Object Aggregate" vertex="1">
+          <mxGeometry height="60" width="120" x="1090" y="-740" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

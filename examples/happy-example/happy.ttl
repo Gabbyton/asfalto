@@ -1,0 +1,120 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix mds: <https://cwrusdle.bitbucket.io/mds/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mds:Happy a owl:NamedIndividual,
+        cco:ont00001262 ;
+    obo:BFO_0000196 mds:HeightOfHappy,
+        mds:WeightOfHappy ;
+    mds:isTemplateHead mds:HappyPerson .
+
+mds:MeasuredHeightOfHappy a owl:NamedIndividual,
+        cco:ont00001163 ;
+    obo:BFO_0000084 mds:LabelOfMeasuredHeightOfHappy ;
+    cco:ont00001808 mds:HeightOfHappy .
+
+mds:MeasuredWeightOfHappy a owl:NamedIndividual,
+        cco:ont00001163 ;
+    obo:BFO_0000084 mds:LabelOfMeasuredWeightOfHappy ;
+    cco:ont00001808 mds:WeightOfHappy .
+
+obo:BFO_0000084 a owl:ObjectProperty ;
+    rdfs:label "generically depends on"@en ;
+    rdfs:domain obo:BFO_0000031 ;
+    rdfs:range [ a owl:Class ;
+            owl:intersectionOf ( obo:BFO_0000004 [ a owl:Class ;
+                        owl:complementOf obo:BFO_0000006 ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( obo:BFO_0000004 [ a owl:Class ;
+                        owl:complementOf obo:BFO_0000006 ] ) ] ;
+    skos:definition "b generically depends on c =Def b is a generically dependent continuant & c is an independent continuant that is not a spatial region & at some time t there inheres in c a specifically dependent continuant which concretizes b at t"@en ;
+    skos:exactMatch obo:BFO_0000084 .
+
+obo:BFO_0000196 a owl:ObjectProperty ;
+    rdfs:label "bearer of"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:intersectionOf ( obo:BFO_0000004 [ a owl:Class ;
+                        owl:complementOf obo:BFO_0000006 ] ) ] ;
+    rdfs:range obo:BFO_0000020 ;
+    skos:definition "b bearer of c =Def c inheres in b"@en ;
+    skos:exactMatch obo:BFO_0000196 .
+
+mds:LabelOfMeasuredHeightOfHappy a owl:NamedIndividual,
+        cco:ont00000253 ;
+    cco:ont00001761 "hehe"^^xsd:string ;
+    cco:ont00001765 "Value"^^xsd:string ;
+    cco:ont00001863 mds:MeausurementUnitOfHeightOfHappy .
+
+mds:LabelOfMeasuredWeightOfHappy a owl:NamedIndividual,
+        cco:ont00000253 ;
+    cco:ont00001761 "hoho"^^xsd:string ;
+    cco:ont00001765 "Value"^^xsd:string ;
+    cco:ont00001863 mds:MeausurementUnitOfWeightOfHappy .
+
+mds:MeausurementUnitOfHeightOfHappy a owl:NamedIndividual,
+        cco:ont00000669 .
+
+mds:MeausurementUnitOfWeightOfHappy a owl:NamedIndividual,
+        cco:ont00000669 .
+
+cco:ont00001761 a owl:AnnotationProperty ;
+    rdfs:label "is tokenized by"@en ;
+    skos:definition "A relation between an information content entity and a widely used token used to express it."@en ;
+    skos:exactMatch cco:ont00001761 .
+
+cco:ont00001765 a owl:DatatypeProperty ;
+    rdfs:label "has text value"@en ;
+    rdfs:domain cco:ont00000253 ;
+    skos:definition "A data property that has as its range a string value."@en ;
+    skos:exactMatch cco:ont00001765 .
+
+cco:ont00001808 a owl:ObjectProperty ;
+    rdfs:label "is about"@en ;
+    rdfs:domain cco:ont00000958 ;
+    rdfs:range obo:BFO_0000001 ;
+    skos:definition "A primitive relationship between an Information Content Entity and some Entity."@en ;
+    skos:exactMatch cco:ont00001808 .
+
+cco:ont00001863 a owl:ObjectProperty ;
+    rdfs:label "uses measurement unit"@en ;
+    rdfs:domain cco:ont00000253 ;
+    rdfs:range cco:ont00000120 ;
+    skos:definition "y uses_measurement_unit x iff y is an instance of Information Bearing Entity and x is an instance of Measurement Unit, such that x describes the magnitude of measured physical quantity mentioned in y."@en ;
+    skos:exactMatch cco:ont00001863 .
+
+mds:HeightOfHappy a obo:BFO_0000019,
+        owl:NamedIndividual .
+
+mds:WeightOfHappy a obo:BFO_0000019,
+        owl:NamedIndividual .
+
+cco:ont00001262 a owl:Class ;
+    rdfs:label "Person"@en ;
+    skos:definition "An Animal that is a member of the species Homo sapiens."@en ;
+    skos:exactMatch cco:ont00001262 .
+
+obo:BFO_0000019 a owl:Class ;
+    rdfs:label "quality"@en ;
+    skos:definition "(Elucidation) A quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized"@en ;
+    skos:exactMatch obo:BFO_0000019 .
+
+cco:ont00000669 a owl:Class ;
+    rdfs:label "Distance Measurement Information Content Entity"@en ;
+    skos:definition "A Ratio Measurement Information Content Entity that is a measurement of a One-Dimensional Extent inhering in some Site that is externally connected to two Independent Continuants."@en ;
+    skos:exactMatch cco:ont00000669 .
+
+cco:ont00001163 a owl:Class ;
+    rdfs:label "Measurement Information Content Entity"@en ;
+    skos:definition "A Descriptive Information Content Entity that describes the extent, dimensions, quantity, or quality of an Entity relative to some standard."@en ;
+    skos:exactMatch cco:ont00001163 .
+
+cco:ont00000253 a owl:Class ;
+    rdfs:label "Information Bearing Entity"@en ;
+    skos:definition "An Object upon which an Information Content Entity generically depends."@en ;
+    skos:exactMatch cco:ont00000253 .
+

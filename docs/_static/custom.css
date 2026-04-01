@@ -1,0 +1,190 @@
+/* =============================================================
+   ASFALTO — PyData Sphinx Theme
+   Palette: asphalt, gravel, concrete, road-marking yellow, rust
+   ============================================================= */
+
+:root {
+  --asfalto-yellow:   #F5C518;
+  --asfalto-yellow-dk:#C9A010;  /* darker yellow for light-mode body links */
+  --asfalto-rust:     #E07B39;
+  --asfalto-dark:     #2B2B2B;
+  --asfalto-mid:      #4A4A4A;
+  --asfalto-concrete: #A8A8A0;
+}
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+
+[data-theme="light"] .navbar {
+  background-color: #5A5A5A !important;
+}
+
+[data-theme="light"] .dropdown-toggle {
+    color: #f0f0f0 !important;
+}
+
+[data-theme="light"] .pst-navbar-icon {
+    color: #f0f0f0 !important;
+}
+
+[data-theme="light"] .navbar-brand .title {
+    color: #f0f0f0 !important;
+}
+
+[data-theme="dark"] .navbar {
+  background-color: #3A3A3A !important;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:visited,
+.navbar .navbar-brand {
+  color: #f0f0f0 !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: var(--asfalto-yellow) !important;
+}
+
+/* ── Navbar dropdowns ───────────────────────────────────────── */
+
+[data-theme="light"] .navbar .dropdown-menu {
+  background-color: #fff;
+  border: 1px solid var(--asfalto-concrete);
+}
+
+[data-theme="light"] .navbar .dropdown-menu .dropdown-item {
+  color: #2B2B2B !important;
+}
+
+[data-theme="light"] .navbar .dropdown-menu .dropdown-item:hover,
+[data-theme="light"] .navbar .dropdown-menu .dropdown-item:focus {
+  background-color: var(--asfalto-yellow);
+  color: var(--asfalto-dark) !important;
+}
+
+[data-theme="dark"] .navbar .dropdown-menu {
+  background-color: #4A4A4A;
+}
+
+[data-theme="dark"] .navbar .dropdown-menu .dropdown-item {
+  color: #f0f0f0 !important;
+}
+
+[data-theme="dark"] .navbar .dropdown-menu .dropdown-item:hover,
+[data-theme="dark"] .navbar .dropdown-menu .dropdown-item:focus {
+  background-color: var(--asfalto-yellow);
+  color: var(--asfalto-dark) !important;
+}
+
+/* ── Sidebar ────────────────────────────────────────────────── */
+
+/* Let PyData control the sidebar background for both modes */
+.bd-sidebar-primary {
+  background-color: unset;
+}
+
+.bd-sidebar-primary a,
+.bd-sidebar-secondary a {
+  color: var(--pst-color-text-base);
+}
+
+.bd-sidebar-primary a:hover,
+.bd-sidebar-secondary a:hover {
+  color: var(--asfalto-yellow);
+}
+
+.bd-sidebar-primary .current > a,
+.bd-sidebar-primary a.active {
+  color: var(--asfalto-dark);
+  background-color: var(--asfalto-yellow);
+  border-radius: 4px;
+}
+
+/* ── Body links ─────────────────────────────────────────────── */
+
+a {
+  color: var(--asfalto-yellow-dk);  /* darker yellow — contrast on white */
+}
+
+a:hover {
+  color: var(--asfalto-rust);
+}
+
+[data-theme="dark"] a {
+  color: var(--asfalto-yellow);     /* brighter yellow on dark bg */
+}
+
+/* ── Inline code ────────────────────────────────────────────── */
+
+code.literal {
+  background-color: var(--pst-color-surface);
+  color: var(--pst-color-text-base);
+  border: 1px solid var(--pst-color-border);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* Code inside a link — invert so it's always readable */
+a code.literal {
+  background-color: var(--asfalto-yellow);
+  color: var(--asfalto-dark);
+  border-color: transparent;
+}
+
+[data-theme="dark"] a code.literal {
+  background-color: var(--asfalto-yellow-dk);
+  color: #1a1a1a;
+}
+
+/* ── Code blocks ────────────────────────────────────────────── */
+
+div[class^="highlight"] {
+  border-left: 3px solid var(--asfalto-yellow);
+}
+
+/* ── Admonitions ────────────────────────────────────────────── */
+
+.admonition.note > .admonition-title {
+  background-color: var(--asfalto-yellow);
+  color: var(--asfalto-dark);
+}
+
+.admonition.warning > .admonition-title {
+  background-color: var(--asfalto-rust);
+  color: #fff;
+}
+
+.sd-container-fluid {
+    margin-top: 2rem;
+}
+
+.sd-card {
+    margin-bottom: 20px;
+}
+
+.sd-card-img-top {
+    height: auto !important;
+    width: 25% !important;
+}
+
+.sd-tab-content > pre {
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
+}
+
+.sd-card-header > p {
+    width: 100%;
+    text-align: center;
+}
+
+img.sd-card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.iframe-container {
+    border: 1px solid black;
+}

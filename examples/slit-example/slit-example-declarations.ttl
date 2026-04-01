@@ -1,0 +1,55 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix mds: <https://cwrusdle.bitbucket.io/mds/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mds:ComponentBrand a owl:Class ;
+    rdfs:subClassOf mds:Name .
+
+mds:BeamlineOptic a owl:Class ;
+    rdfs:subClassOf cco:ont00000995 .
+
+mds:Name a owl:Class .
+
+mds:SlitOrientation a owl:Class ;
+    rdfs:subClassOf cco:ont00000119 .
+
+mds:Split a owl:Class ;
+    rdfs:label "Split" ;
+    rdfs:subClassOf mds:BeamlineOptic ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:minQualifiedCardinality 1 ;
+            owl:onClass mds:SlitOrientation ;
+            owl:onProperty obo:BFO_0000196 ] ;
+    skos:definition "A subset of the dataset used in training a neural network with a specialized role in the training process, represented as a decimal fraction of the dataset."@en ;
+    skos:exactMatch mds:Split .
+
+cco:ont00001879 a owl:ObjectProperty ;
+    rdfs:label "designated by"@en ;
+    rdfs:range cco:ont00000686 ;
+    skos:definition "x designated_by y iff y is an instance of Information Content Entity and x is an instance of Entity, such that given some context, y uniquely distinguishes x from other entities."@en ;
+    skos:exactMatch cco:ont00001879 .
+
+obo:BFO_0000196 a owl:ObjectProperty ;
+    rdfs:label "bearer of"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:intersectionOf ( obo:BFO_0000004 [ a owl:Class ;
+                        owl:complementOf obo:BFO_0000006 ] ) ] ;
+    rdfs:range obo:BFO_0000020 ;
+    skos:definition "b bearer of c =Def c inheres in b"@en ;
+    skos:exactMatch obo:BFO_0000196 .
+
+cco:ont00000119 a owl:Class ;
+    rdfs:label "Spatial Orientation"@en ;
+    skos:definition "A Relational Quality that is the angle of Rotation of an Object relative to one or more Plane of Reference or Axis of Rotation."@en ;
+    skos:exactMatch cco:ont00000119 .
+
+cco:ont00000995 a owl:Class ;
+    rdfs:label "Material Artifact"@en ;
+    skos:definition "A Material Entity that was designed by some Agent to realize a certain Function."@en ;
+    skos:exactMatch cco:ont00000995 .
+

@@ -1,0 +1,230 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix mds: <https://cwrusdle.bitbucket.io/mds/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+skos:exactMatch rdf:type owl:AnnotationProperty .
+
+
+###  https://cwrusdle.bitbucket.io/mds/hasTrait
+mds:hasTrait rdf:type owl:AnnotationProperty .
+
+
+###  https://cwrusdle.bitbucket.io/mds/isTemplateHead
+mds:isTemplateHead rdf:type owl:AnnotationProperty .
+
+
+###  https://www.commoncoreontologies.org/ont00001761
+cco:ont00001761 rdf:type owl:AnnotationProperty ;
+                rdfs:label "is tokenized by"@en ;
+                skos:definition "A relation between an information content entity and a widely used token used to express it."@en ;
+                skos:exactMatch cco:ont00001761 .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000129
+obo:BFO_0000129 rdf:type owl:ObjectProperty ;
+                rdfs:domain obo:BFO_0000040 ;
+                rdfs:range obo:BFO_0000040 .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000210
+obo:BFO_0000210 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
+                                                   [ rdf:type owl:Class ;
+                                                     owl:complementOf obo:BFO_0000006
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                rdfs:range obo:BFO_0000006 .
+
+
+###  https://www.commoncoreontologies.org/ont00001811
+cco:ont00001811 rdf:type owl:ObjectProperty ;
+                rdfs:domain cco:ont00001010 .
+
+
+###  https://www.commoncoreontologies.org/ont00001916
+cco:ont00001916 rdf:type owl:ObjectProperty ;
+                rdfs:domain cco:ont00000686 .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000004
+obo:BFO_0000004 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000006
+obo:BFO_0000006 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+obo:BFO_0000040 rdf:type owl:Class .
+
+
+###  https://cwrusdle.bitbucket.io/mds/BeamlineMotorPosition
+mds:BeamlineMotorPosition rdf:type owl:Class ;
+                          rdfs:subClassOf cco:ont00000170 .
+
+
+###  https://cwrusdle.bitbucket.io/mds/BeamlineMotorStack
+mds:BeamlineMotorStack rdf:type owl:Class ;
+                       rdfs:subClassOf cco:ObjectAggreagte .
+
+
+###  https://cwrusdle.bitbucket.io/mds/Motor
+mds:Motor rdf:type owl:Class ;
+          rdfs:subClassOf cco:ont00000952 .
+
+
+###  https://www.commoncoreontologies.org/ObjectAggreagte
+cco:ObjectAggreagte rdf:type owl:Class ;
+                    skos:exactMatch cco:ObjectAggreagte .
+
+
+###  https://www.commoncoreontologies.org/ont00000077
+cco:ont00000077 rdf:type owl:Class ;
+                rdfs:label "Code Identifier"@en ;
+                skos:definition "A Non-Name Identifier that consists of a string of characters that was created and assigned according to an encoding system such that metadata can be derived from the identifier."@en ;
+                skos:exactMatch cco:ont00000077 .
+
+
+###  https://www.commoncoreontologies.org/ont00000161
+cco:ont00000161 rdf:type owl:Class ;
+                rdfs:label "Coordinate System Axis"@en ;
+                skos:definition "A One-Dimensional Spatial Region defined by a Coordinate System for the purpose of identifying the position of entities along one dimension of the Coordinate System's spatial framework."@en ;
+                skos:exactMatch cco:ont00000161 .
+
+
+###  https://www.commoncoreontologies.org/ont00000170
+cco:ont00000170 rdf:type owl:Class ;
+                rdfs:label "Object Track Point"@en ;
+                skos:definition "A Zero-Dimensional Spatial Region that is an idealized point where an Object is or was located during some motion."@en ;
+                skos:exactMatch cco:ont00000170 .
+
+
+###  https://www.commoncoreontologies.org/ont00000686
+cco:ont00000686 rdf:type owl:Class ;
+                rdfs:label "Designative Information Content Entity"@en ;
+                skos:definition "An Information Content Entity that consists of a set of symbols that designate some Entity."@en ;
+                skos:exactMatch cco:ont00000686 .
+
+
+###  https://www.commoncoreontologies.org/ont00000952
+cco:ont00000952 rdf:type owl:Class ;
+                rdfs:label "Electric Motor"@en ;
+                skos:definition "An Engine that is designed to convert electrical energy into mechanical energy."@en ;
+                skos:exactMatch cco:ont00000952 .
+
+
+###  https://www.commoncoreontologies.org/ont00001010
+cco:ont00001010 rdf:type owl:Class .
+
+
+###  https://www.commoncoreontologies.org/ont00001041
+cco:ont00001041 rdf:type owl:Class ;
+                rdfs:label "Sequence Position Ordinality"@en ;
+                skos:definition "An Ordinal Measurement Information Content Entity that is about the position of some entity in some ordered sequence."@en ;
+                skos:exactMatch cco:ont00001041 .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://cwrusdle.bitbucket.io/mds/Example
+mds:Example rdf:type owl:NamedIndividual ,
+                     mds:Motor ;
+            obo:BFO_0000129 mds:ExampleStackInstance ;
+            obo:BFO_0000210 mds:ExamplePositionInstance ;
+            mds:isTemplateHead mds:BeamlineMotorTemplate .
+
+
+###  https://cwrusdle.bitbucket.io/mds/ExampleAxis
+mds:ExampleAxis rdf:type owl:NamedIndividual ,
+                         cco:ont00000161 .
+
+
+###  https://cwrusdle.bitbucket.io/mds/ExampleAxisDesignator
+mds:ExampleAxisDesignator rdf:type owl:NamedIndividual ,
+                                   cco:ont00000686 ;
+                          cco:ont00001916 mds:Example ,
+                                          mds:ExampleAxis .
+
+
+###  https://cwrusdle.bitbucket.io/mds/ExampleIdentifier
+mds:ExampleIdentifier rdf:type owl:NamedIndividual ,
+                               cco:ont00000077 ;
+                      cco:ont00001916 mds:Example .
+
+
+###  https://cwrusdle.bitbucket.io/mds/ExampleIndex
+mds:ExampleIndex rdf:type owl:NamedIndividual ,
+                          cco:ont00001041 ;
+                 cco:ont00001811 mds:Example .
+
+
+###  https://cwrusdle.bitbucket.io/mds/ExamplePositionInstance
+mds:ExamplePositionInstance rdf:type owl:NamedIndividual ,
+                                     mds:BeamlineMotorPosition .
+
+
+###  https://cwrusdle.bitbucket.io/mds/ExampleStackInstance
+mds:ExampleStackInstance rdf:type owl:NamedIndividual ,
+                                  mds:BeamlineMotorStack .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+obo:BFO_0000129 rdfs:label "member part of"@en ;
+                skos:definition "b member part of c =Def b is an object & c is a material entity & there is some time t such that b continuant part of c at t & there is a mutually exhaustive and pairwise disjoint partition of c into objects x1, ..., xn (for some n ≠ 1) with b = xi (for some 1 <= i <= n)"@en ;
+                skos:exactMatch obo:BFO_0000129 .
+
+
+obo:BFO_0000210 rdfs:label "occupies spatial region"@en ;
+                skos:definition "b occupies spatial region r =Def b is an independent continuant that is not a spatial region & r is a spatial region & there is some time t such that every continuant part of b occupies some continuant part of r at t and no continuant part of b occupies any spatial region that is not a continuant part of r at t"@en ;
+                skos:exactMatch obo:BFO_0000210 .
+
+
+mds:BeamlineMotorPositionIdentifier mds:hasTrait mds:ReadEPICSVariable ;
+                                    cco:ont00001916 mds:ExamplePositionInstance .
+
+
+cco:ont00001811 rdfs:label "is a ordinal measurement of"@en ;
+                skos:definition "x is_a_ordinal_measurement_of y iff x is an instance of Information Content Entity and y is an instance of Entity, such that x describes some attribute of y relative to a scale ordered by rank."@en ;
+                skos:exactMatch cco:ont00001811 .
+
+
+cco:ont00001916 rdfs:label "designates"@en ;
+                skos:definition "x designates y iff x is an instance of an Information Content Entity, and y is an instance of an Entity, such that given some context, x uniquely distinguishes y from other entities."@en ;
+                skos:exactMatch cco:ont00001916 .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

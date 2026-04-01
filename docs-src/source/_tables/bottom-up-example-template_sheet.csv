@@ -1,0 +1,3 @@
+template,mds:QualityClassTemplate
+AwesomeQuality,LabelOfMeasuredAwesomeQuality,LabelOfMeasuredAwesomeQualityValue,MeasuredAwesomeQuality,MeausurementUnitOfAwesomeQuality,QualityClass
+iri,iri,xsd:string,iri,iri,iri

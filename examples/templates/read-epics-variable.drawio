@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="dmzDBi7so52sCYdRT-xy">
+    <mxGraphModel dx="1412" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3oGhQtDAiKSPlsym7MdA-4" edge="1" parent="1" source="vBQgwOTYt9nIxtiKnS7x-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3oGhQtDAiKSPlsym7MdA-3" value="obo:g-depends on">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-5" edge="1" parent="1" source="vBQgwOTYt9nIxtiKnS7x-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zWZZAXyiCzdzkxNR5xnm-4" value="mds:isTemplateHead">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vBQgwOTYt9nIxtiKnS7x-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="EPICS Variable" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-3" edge="1" parent="1" source="3oGhQtDAiKSPlsym7MdA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zWZZAXyiCzdzkxNR5xnm-2" value="cco:has text value">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3oGhQtDAiKSPlsym7MdA-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Label of EPICS Variable" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="3oGhQtDAiKSPlsym7MdA-7" edge="1" parent="1" source="3oGhQtDAiKSPlsym7MdA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3oGhQtDAiKSPlsym7MdA-6" value="rdfs:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-12" edge="1" parent="1" source="zWZZAXyiCzdzkxNR5xnm-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3oGhQtDAiKSPlsym7MdA-5" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3oGhQtDAiKSPlsym7MdA-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;direction=west;" value="mds:EPICS PV Variable" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="3oGhQtDAiKSPlsym7MdA-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cco:Code Identifier" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&quot;Value&quot;^^xsd:string" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mds:ReadEPICSVariable" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-8" edge="1" parent="1" source="zWZZAXyiCzdzkxNR5xnm-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zWZZAXyiCzdzkxNR5xnm-7" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Label of EPICS Variable" vertex="1">
+          <mxGeometry height="60" width="120" x="730" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cco:IBE" vertex="1">
+          <mxGeometry height="60" width="120" x="730" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="zWZZAXyiCzdzkxNR5xnm-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="EPICS Variable" vertex="1">
+          <mxGeometry height="60" width="120" x="590" y="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

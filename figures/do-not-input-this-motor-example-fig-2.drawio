@@ -1,0 +1,192 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="properties" id="K02ldlEDfsZF2SUv9m8H">
+    <mxGraphModel dx="2262" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cgjzykBpUIQ4FUrqb6V8-4" edge="1" parent="1" source="cgjzykBpUIQ4FUrqb6V8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" target="cgjzykBpUIQ4FUrqb6V8-1" value="obo:occupies spatial region">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="290" y="330" />
+              <mxPoint x="290" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KDw_9B4GKSfd0AuLOxc3-5" edge="1" parent="1" source="KDw_9B4GKSfd0AuLOxc3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="cgjzykBpUIQ4FUrqb6V8-1" value="cco:designates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cgjzykBpUIQ4FUrqb6V8-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Position" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="cgjzykBpUIQ4FUrqb6V8-6" edge="1" parent="1" source="cgjzykBpUIQ4FUrqb6V8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" target="cgjzykBpUIQ4FUrqb6V8-5" value="obo:member part of">
+          <mxGeometry relative="1" y="30" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KDw_9B4GKSfd0AuLOxc3-9" edge="1" parent="1" source="cgjzykBpUIQ4FUrqb6V8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KDw_9B4GKSfd0AuLOxc3-8" value="mds:isTemplateHead">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cgjzykBpUIQ4FUrqb6V8-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cgjzykBpUIQ4FUrqb6V8-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Stack" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-82" edge="1" parent="1" source="vslbBzIGU-FBtHevIAu0-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;" target="cgjzykBpUIQ4FUrqb6V8-3" value="cco:designates">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-117" edge="1" parent="1" source="vslbBzIGU-FBtHevIAu0-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rHjFXQ963zYVDmFMPItG-116" value="cco:is tokenized by">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vslbBzIGU-FBtHevIAu0-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor&amp;nbsp;Identifier" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Object Aggregate" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-12" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="rHjFXQ963zYVDmFMPItG-11" value="rdfs:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Beamline Motor Stack" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-19" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;" target="rHjFXQ963zYVDmFMPItG-21" value="rdfs:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Motor" vertex="1">
+          <mxGeometry height="60" width="120" x="1130" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Electric Motor" vertex="1">
+          <mxGeometry height="60" width="120" x="1130" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-22" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" target="rHjFXQ963zYVDmFMPItG-28" value="rdfs:subClassOf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="mds:Beamline Motor Position" vertex="1">
+          <mxGeometry height="60" width="120" x="1290" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Object Track Point" vertex="1">
+          <mxGeometry height="60" width="120" x="1290" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Coordinate System Axis" vertex="1">
+          <mxGeometry height="60" width="120" x="1450" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-36" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" target="rHjFXQ963zYVDmFMPItG-13" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor&amp;nbsp;Stack" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-47" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" target="rHjFXQ963zYVDmFMPItG-32" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor&amp;nbsp;Axis" vertex="1">
+          <mxGeometry height="60" width="120" x="1450" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-56" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" target="rHjFXQ963zYVDmFMPItG-20" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-57" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor" vertex="1">
+          <mxGeometry height="60" width="120" x="1130" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Code Identifier" vertex="1">
+          <mxGeometry height="60" width="120" x="1240" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-80" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" target="rHjFXQ963zYVDmFMPItG-23" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor&amp;nbsp;Position" vertex="1">
+          <mxGeometry height="60" width="120" x="1290" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-86" edge="1" parent="1" source="rHjFXQ963zYVDmFMPItG-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=1;" target="rHjFXQ963zYVDmFMPItG-76" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-83" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor&amp;nbsp;Identifier" vertex="1">
+          <mxGeometry height="60" width="120" x="1240" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="rHjFXQ963zYVDmFMPItG-116" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&quot;Beamline Motor&amp;nbsp;Identifier Value&quot;^^xsd:string" vertex="1">
+          <mxGeometry height="60" width="120" x="680" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="KDw_9B4GKSfd0AuLOxc3-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Position Identifier" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="KDw_9B4GKSfd0AuLOxc3-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="mds:BeamlineMotorTemplate" vertex="1">
+          <mxGeometry height="60" width="120" x="-20" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-1" edge="1" parent="1" source="KDw_9B4GKSfd0AuLOxc3-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="KgzLpXHKx3ZeshSw42Uo-2" value="mds:has trait">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="510" />
+            </Array>
+            <mxPoint x="110" y="500" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="mds:ReadEPICSVariable" vertex="1">
+          <mxGeometry height="60" width="120" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-9" edge="1" parent="1" source="KgzLpXHKx3ZeshSw42Uo-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KgzLpXHKx3ZeshSw42Uo-8" value="cco:designates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-10" edge="1" parent="1" source="KgzLpXHKx3ZeshSw42Uo-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="cgjzykBpUIQ4FUrqb6V8-3" value="cco:designates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Axis Designator" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Axis" vertex="1">
+          <mxGeometry height="60" width="120" x="680" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-13" edge="1" parent="1" source="KgzLpXHKx3ZeshSw42Uo-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KgzLpXHKx3ZeshSw42Uo-12" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Axis Designator" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Designative Information Content Entity" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-18" edge="1" parent="1" source="KgzLpXHKx3ZeshSw42Uo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="cgjzykBpUIQ4FUrqb6V8-3" value="cco:is a ordinal measurement of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-24" edge="1" parent="1" source="KgzLpXHKx3ZeshSw42Uo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KgzLpXHKx3ZeshSw42Uo-22" value="cco:is tokenized by">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Index" vertex="1">
+          <mxGeometry height="60" width="120" x="470" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-21" edge="1" parent="1" source="KgzLpXHKx3ZeshSw42Uo-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KgzLpXHKx3ZeshSw42Uo-20" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;dashed=1;" value="Beamline Motor Index" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Sequence Position Ordinality" vertex="1">
+          <mxGeometry height="60" width="120" x="940" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="KgzLpXHKx3ZeshSw42Uo-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&quot;Beamline Motor Index Value&quot;^^xsd:string" vertex="1">
+          <mxGeometry height="60" width="120" x="680" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="GTz1KzIDCzWzRFDqIcM8-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Named Individuals, Classes and Types&lt;/h1&gt;&lt;p&gt;This annotated figure will guide you on the differences between named individuals, classes and literals, and how they can be indicated as placeholders for your template.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="210" width="300" x="-50" y="-260" as="geometry" />
+        </mxCell>
+        <mxCell id="GTz1KzIDCzWzRFDqIcM8-3" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h2 style=&quot;margin-top: 0px;&quot;&gt;Named Individuals&lt;/h2&gt;&lt;p&gt;Also called instances, these are terms that have a uniqe IRI but are treated as iterations of a particular class. For example, a beamline motor individual, is a type of motor.&lt;/p&gt;&lt;p&gt;Only named individuals can have object properties between them (for non-punned inputs).&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="240" x="-50" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GTz1KzIDCzWzRFDqIcM8-4" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h2 style=&quot;margin-top: 0px;&quot;&gt;Class&lt;/h2&gt;&lt;p&gt;Classes are named entities with unique IRIs that describe a general category of things. They have properties that apply to ALL member individuals of the class.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="950" y="-300" as="geometry" />
+        </mxCell>
+        <mxCell id="GTz1KzIDCzWzRFDqIcM8-5" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h2 style=&quot;margin-top: 0px;&quot;&gt;Literals&lt;/h2&gt;&lt;p&gt;Literals are entities that represent values, like strings or numbers. They always come with the value and the data type, signified by the ^^ symbol.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="580" as="geometry" />
+        </mxCell>
+        <mxCell id="GTz1KzIDCzWzRFDqIcM8-6" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h2 style=&quot;margin-top: 0px;&quot;&gt;Describing Classes vs. Individuals&lt;/h2&gt;&lt;p&gt;An individual is denoted by being the subject of the rdf:type property. Classes are denoted by being the subject of the rdfs:subClassOf property.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Note all properties defined with rdf:type are not considered named individuals by ASFALTO.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="210" width="260" x="1400" y="-170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

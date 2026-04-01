@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="dmzDBi7so52sCYdRT-xy">
+    <mxGraphModel dx="1412" dy="845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-2" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aWAF9JJyeFn8Agl8ju7B-6" value="obo:g-depends on">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-21" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aWAF9JJyeFn8Agl8ju7B-20" value="cco:is about">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Measured Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-4" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aWAF9JJyeFn8Agl8ju7B-7" value="cco:has text value">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-5" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aWAF9JJyeFn8Agl8ju7B-8" value="cco:uses measurement unit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Label of Measured Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&quot;Value&quot;^^xsd:string" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Meausurement Unit of Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="530" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Measurement Information Content Entity" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-10" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="aWAF9JJyeFn8Agl8ju7B-9" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Measured Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="740" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-13" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aWAF9JJyeFn8Agl8ju7B-15" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Label of Measured Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="880" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:IBE" vertex="1">
+          <mxGeometry height="60" width="120" x="880" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-17" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aWAF9JJyeFn8Agl8ju7B-18" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="cco:Distance Measurement Information Content Entity" vertex="1">
+          <mxGeometry height="60" width="120" x="1030" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Meausurement Unit of Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="1030" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="gWn5oXbUOlPhMA5uIBQD-11" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="gWn5oXbUOlPhMA5uIBQD-10" value="mds:isTemplateHead">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-25" edge="1" parent="1" source="aWAF9JJyeFn8Agl8ju7B-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aWAF9JJyeFn8Agl8ju7B-24" value="rdf:type">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="Object Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="1190" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="aWAF9JJyeFn8Agl8ju7B-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#d6b656;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#fff2cc;" value="obo:Quality" vertex="1">
+          <mxGeometry height="60" width="120" x="1190" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="gWn5oXbUOlPhMA5uIBQD-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mds:Variable*" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

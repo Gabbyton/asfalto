@@ -1,0 +1,117 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix mds: <https://cwrusdle.bitbucket.io/mds/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mds:BeamlineMotorAxisDesignator a owl:NamedIndividual,
+        cco:ont00000686 ;
+    cco:ont00001916 mds:BeamlineMotor,
+        mds:BeamlineMotorAxis .
+
+mds:BeamlineMotorIdentifier a owl:NamedIndividual,
+        cco:ont00000077 ;
+    cco:ont00001761 "Beamline Motor Identifier Value"^^xsd:string ;
+    cco:ont00001916 mds:BeamlineMotor .
+
+mds:BeamlineMotorIndex a owl:NamedIndividual,
+        cco:ont00001041 ;
+    cco:ont00001761 "Beamline Motor Index Value"^^xsd:string ;
+    cco:ont00001811 mds:BeamlineMotor .
+
+mds:BeamlineMotorPositionIdentifier mds:hasTrait mds:ReadEPICSVariable ;
+    cco:ont00001916 mds:BeamlineMotorPositionInstance .
+
+obo:BFO_0000129 a owl:ObjectProperty ;
+    rdfs:label "member part of"@en ;
+    rdfs:domain obo:BFO_0000040 ;
+    rdfs:range obo:BFO_0000040 ;
+    skos:definition "b member part of c =Def b is an object & c is a material entity & there is some time t such that b continuant part of c at t & there is a mutually exhaustive and pairwise disjoint partition of c into objects x1, ..., xn (for some n ≠ 1) with b = xi (for some 1 <= i <= n)"@en ;
+    skos:exactMatch obo:BFO_0000129 .
+
+obo:BFO_0000210 a owl:ObjectProperty ;
+    rdfs:label "occupies spatial region"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:intersectionOf ( obo:BFO_0000004 [ a owl:Class ;
+                        owl:complementOf obo:BFO_0000006 ] ) ] ;
+    rdfs:range obo:BFO_0000006 ;
+    skos:definition "b occupies spatial region r =Def b is an independent continuant that is not a spatial region & r is a spatial region & there is some time t such that every continuant part of b occupies some continuant part of r at t and no continuant part of b occupies any spatial region that is not a continuant part of r at t"@en ;
+    skos:exactMatch obo:BFO_0000210 .
+
+mds:BeamlineMotorAxis a owl:NamedIndividual,
+        cco:ont00000161 .
+
+mds:BeamlineMotorPosition a owl:Class ;
+    rdfs:subClassOf cco:ont00000170 .
+
+mds:BeamlineMotorStack a owl:Class ;
+    rdfs:subClassOf cco:ObjectAggreagte .
+
+mds:BeamlineMotorStackInstance a owl:NamedIndividual,
+        mds:BeamlineMotorStack .
+
+mds:Motor a owl:Class ;
+    rdfs:subClassOf cco:ont00000952 .
+
+cco:ont00001761 a owl:AnnotationProperty ;
+    rdfs:label "is tokenized by"@en ;
+    skos:definition "A relation between an information content entity and a widely used token used to express it."@en ;
+    skos:exactMatch cco:ont00001761 .
+
+cco:ont00001811 a owl:ObjectProperty ;
+    rdfs:label "is a ordinal measurement of"@en ;
+    rdfs:domain cco:ont00001010 ;
+    skos:definition "x is_a_ordinal_measurement_of y iff x is an instance of Information Content Entity and y is an instance of Entity, such that x describes some attribute of y relative to a scale ordered by rank."@en ;
+    skos:exactMatch cco:ont00001811 .
+
+cco:ont00001916 a owl:ObjectProperty ;
+    rdfs:label "designates"@en ;
+    rdfs:domain cco:ont00000686 ;
+    skos:definition "x designates y iff x is an instance of an Information Content Entity, and y is an instance of an Entity, such that given some context, x uniquely distinguishes y from other entities."@en ;
+    skos:exactMatch cco:ont00001916 .
+
+mds:BeamlineMotorPositionInstance a owl:NamedIndividual,
+        mds:BeamlineMotorPosition .
+
+cco:ObjectAggreagte a owl:Class ;
+    skos:exactMatch cco:ObjectAggreagte .
+
+cco:ont00000077 a owl:Class ;
+    rdfs:label "Code Identifier"@en ;
+    skos:definition "A Non-Name Identifier that consists of a string of characters that was created and assigned according to an encoding system such that metadata can be derived from the identifier."@en ;
+    skos:exactMatch cco:ont00000077 .
+
+cco:ont00000161 a owl:Class ;
+    rdfs:label "Coordinate System Axis"@en ;
+    skos:definition "A One-Dimensional Spatial Region defined by a Coordinate System for the purpose of identifying the position of entities along one dimension of the Coordinate System's spatial framework."@en ;
+    skos:exactMatch cco:ont00000161 .
+
+cco:ont00000170 a owl:Class ;
+    rdfs:label "Object Track Point"@en ;
+    skos:definition "A Zero-Dimensional Spatial Region that is an idealized point where an Object is or was located during some motion."@en ;
+    skos:exactMatch cco:ont00000170 .
+
+cco:ont00000952 a owl:Class ;
+    rdfs:label "Electric Motor"@en ;
+    skos:definition "An Engine that is designed to convert electrical energy into mechanical energy."@en ;
+    skos:exactMatch cco:ont00000952 .
+
+cco:ont00001041 a owl:Class ;
+    rdfs:label "Sequence Position Ordinality"@en ;
+    skos:definition "An Ordinal Measurement Information Content Entity that is about the position of some entity in some ordered sequence."@en ;
+    skos:exactMatch cco:ont00001041 .
+
+mds:BeamlineMotor a owl:NamedIndividual,
+        mds:Motor ;
+    obo:BFO_0000129 mds:BeamlineMotorStackInstance ;
+    obo:BFO_0000210 mds:BeamlineMotorPositionInstance ;
+    mds:isTemplateHead mds:BeamlineMotorTemplate .
+
+cco:ont00000686 a owl:Class ;
+    rdfs:label "Designative Information Content Entity"@en ;
+    skos:definition "An Information Content Entity that consists of a set of symbols that designate some Entity."@en ;
+    skos:exactMatch cco:ont00000686 .
+

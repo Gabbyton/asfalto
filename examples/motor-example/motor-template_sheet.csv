@@ -1,0 +1,4 @@
+template,mds:BeamlineMotorTemplate
+BeamlineMotor,BeamlineMotorAxis,BeamlineMotorAxisDesignator,BeamlineMotorIdentifier,BeamlineMotorIdentifierValue,BeamlineMotorIndex,BeamlineMotorIndexValue,BeamlineMotorPositionInstance,BeamlineMotorStackInstance
+iri,iri,iri,iri,xsd:string,iri,xsd:string,iri,iri
+Example,,,,,,,,

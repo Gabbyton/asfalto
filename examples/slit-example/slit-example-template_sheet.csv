@@ -1,0 +1,5 @@
+template,mds:BeamlineSlitTemplate
+BeamlineSlit,BeamlineSlitBrand,BeamlineSlitOrientation
+iri,iri,iri
+KozhuDSSlit,Kozhu,Vertical
+JJUSSlit,JJ,Horizontal
