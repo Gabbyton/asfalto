@@ -561,7 +561,7 @@
 </section>
 <section id="null-values-and-nones">
 <h2>Null Values and Nones<a class="headerlink" href="#null-values-and-nones" title="Link to this heading">#</a></h2>
-<p>The ASFALTO package deals with two types of null values that come out naturally from operating on placeholders. The first one, null, occurs when you leave a cell in the sheet blank. The second one, None, is a value you type or paste into a cell.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ASFALTO</span></code> package deals with two types of null values that come out naturally from operating on placeholders. The first one, null, occurs when you leave a cell in the sheet blank. The second one, <code class="docutils literal notranslate"><span class="pre">None</span></code>, is a value you type or paste into a cell.</p>
 <p>Use null values (or essentially leave a space empty) when you want cells to be named based on their parents as named individuals. They will exist in your ontology but they won’t have characteristics specific to them, only that they have unique IRIs. We call these inherited defaults, and they exist because templates, or ontologies in general, can describe the same system with different granularities (more specific or more high level). Reconciling them would be an astronomical effort unless the default is to say that a certain concept about them (a term) already exists.</p>
 <a class="reference internal image-reference" href="../_images/fig-21.png"><img alt="the scheme for name inheritance" src="../_images/fig-21.png" style="width: 700px;" />
 </a>
@@ -569,7 +569,7 @@
 <p>Use <code class="docutils literal notranslate"><span class="pre">None</span></code> values when your template deals with cases of named individuals where a variation must not have a relationship described for another. For example, a virtual motor may share a lot in common with all motors (hence the same template), but may not have an axis associated with them.</p>
 <section id="a-note-of-classes-for-iri-input">
 <h3>A Note of Classes for IRI Input<a class="headerlink" href="#a-note-of-classes-for-iri-input" title="Link to this heading">#</a></h3>
-<p>By default, all names added to columns with the IRI type will become named individuals. You may add a class term inside the cell and ASFALTO will create an instance out of the class and name it based on the term parents.</p>
+<p>By default, all names added to columns with the IRI type will become named individuals. You may add a class term inside the cell and <code class="docutils literal notranslate"><span class="pre">ASFALTO</span></code> will create an instance out of the class and name it based on the term parents.</p>
 <p><strong>NOTE:</strong> <code class="docutils literal notranslate"><span class="pre">ASFALTO</span></code> currently only supports one datatype, <code class="docutils literal notranslate"><span class="pre">xsd:string</span></code>, for literal inputs.</p>
 <p>After you have populated the sheets, we can expand the template to get the expanded turtle file.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>asfalto<span class="w"> </span>expand<span class="w"> </span>motor-template_sheet.csv<span class="w"> </span>.
@@ -581,7 +581,7 @@
 </pre></div>
 </div>
 <p>This will produce a <code class="docutils literal notranslate"><span class="pre">motor-final.ttl</span></code> file that contains all the classes, instances, and newly populated named individuals into one file. You can now use this file for your applications.</p>
-<p><strong>NOTE:</strong> These intermediate files were generated for debugging purposes, and a future ASFALTO release will give you the option to delete them.</p>
+<p><strong>NOTE:</strong> These intermediate files were generated for debugging purposes, and a future <code class="docutils literal notranslate"><span class="pre">ASFALTO</span></code> release will give you the option to delete them.</p>
 </section>
 </section>
 <section id="templates-within-templates">

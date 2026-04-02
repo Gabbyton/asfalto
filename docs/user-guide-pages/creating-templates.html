@@ -478,9 +478,9 @@
 <p>The following diagram walks you through the key distinctions between the three types of acceptable inputs:</p>
 <div class="iframe-container user " style="width: 100%;height: auto;aspect-ratio: 1.77;">
 
-            <iframe class="sphinx" None src="https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2Fasfalto%2Frefs%2Fheads%2Fmain%2Ffigures%2Fdo-not-input-this-slit-motor-example-fig-2.drawio" allow="fullscreen *;autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *" frameborder="0"></iframe>
+            <iframe class="sphinx" None src="https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2Fasfalto%2Frefs%2Fheads%2Fmain%2Ffigures%2Fdo-not-input-this-motor-example-fig-2.drawio" allow="fullscreen *;autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *" frameborder="0"></iframe>
         
-</div><p>Having trouble? Download the figure above as a <a class="reference download external" download="" href="https://raw.githubusercontent.com/Gabbyton/CEMENTO/refs/heads/main/figures/do-not-input-this-happy-motor-example-fig-2.drawio"><code class="xref download docutils literal notranslate"><span class="pre">draw.io</span> <span class="pre">diagram</span></code></a>.</p>
+</div><p>Having trouble? Download the figure above as a <a class="reference download external" download="" href="https://raw.githubusercontent.com/Gabbyton/asfalto/refs/heads/main/figures/do-not-input-this-happy-motor-example-fig-2.drawio"><code class="xref download docutils literal notranslate"><span class="pre">draw.io</span> <span class="pre">diagram</span></code></a>.</p>
 <p>For the purposes of the package, using the rdf:type between an individual and a class indicates the former as a placeholder. Using any kind of literal connected to a named individual will mark that literal as a placeholder value.</p>
 <p><strong>NOTE:</strong>  Some named individuals that could be used in templates may be fixed members of enumerations. The <code class="docutils literal notranslate"><span class="pre">ASFALTO</span></code> package currently does not support their use. Enumeration-member named individuals will be treated like placeholders.</p>
 <p>Once you have the terms in the diagram defined, you can now use the CEMENTO package to convert into a turtle file:</p>
@@ -501,7 +501,7 @@
 </section>
 <section id="what-is-a-head-node">
 <h3>What is a Head Node?<a class="headerlink" href="#what-is-a-head-node" title="Link to this heading">#</a></h3>
-<p>A head node is the focal point of the template. In our case, the focal point of the template is the motor and the motor has a triple that designates it as the head. Practically, this means the motor.ttl file is about the motor, and any term included into it is associated with, named after, and about the motor term. Head nodes must be named IRI terms.</p>
+<p>A head node is the focal point of the template. In our case, the focal point of the template is the motor and the motor has a triple that designates it as the head. Practically, this means the <code class="docutils literal notranslate"><span class="pre">motor.ttl</span></code> file is about the motor, and any term included into it is associated with, named after, and about the motor term. Head nodes must be named IRI terms.</p>
 <blockquote>
 <div><p>The <code class="docutils literal notranslate"><span class="pre">ASFALTO</span></code> package treats all templates as ego-centric, and recommends users to separate templates by different focal points, rather than putting them into one big file.</p>
 </div></blockquote>

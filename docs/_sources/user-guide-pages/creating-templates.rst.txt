@@ -9,11 +9,11 @@ Converting from draw.io to Template
 
 The following diagram walks you through the key distinctions between the three types of acceptable inputs:
 
-.. iframe:: https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2Fasfalto%2Frefs%2Fheads%2Fmain%2Ffigures%2Fdo-not-input-this-slit-motor-example-fig-2.drawio
+.. iframe:: https://viewer.diagrams.net?#Uhttps%3A%2F%2Fraw.githubusercontent.com%2FGabbyton%2Fasfalto%2Frefs%2Fheads%2Fmain%2Ffigures%2Fdo-not-input-this-motor-example-fig-2.drawio
     :height: auto
     :width: 100%
     :aspectratio: 1.77
-Having trouble? Download the figure above as a :download:`draw.io diagram <https://raw.githubusercontent.com/Gabbyton/CEMENTO/refs/heads/main/figures/do-not-input-this-happy-motor-example-fig-2.drawio>`.
+Having trouble? Download the figure above as a :download:`draw.io diagram <https://raw.githubusercontent.com/Gabbyton/asfalto/refs/heads/main/figures/do-not-input-this-happy-motor-example-fig-2.drawio>`.
 
 For the purposes of the package, using the rdf:type between an individual and a class indicates the former as a placeholder. Using any kind of literal connected to a named individual will mark that literal as a placeholder value.
 
@@ -46,7 +46,7 @@ This error arises because every Turtle file in ``ASFALTO`` is treated as a templ
 What is a Head Node?
 --------------------
 
-A head node is the focal point of the template. In our case, the focal point of the template is the motor and the motor has a triple that designates it as the head. Practically, this means the motor.ttl file is about the motor, and any term included into it is associated with, named after, and about the motor term. Head nodes must be named IRI terms.
+A head node is the focal point of the template. In our case, the focal point of the template is the motor and the motor has a triple that designates it as the head. Practically, this means the ``motor.ttl`` file is about the motor, and any term included into it is associated with, named after, and about the motor term. Head nodes must be named IRI terms.
 
  The ``ASFALTO`` package treats all templates as ego-centric, and recommends users to separate templates by different focal points, rather than putting them into one big file.
 

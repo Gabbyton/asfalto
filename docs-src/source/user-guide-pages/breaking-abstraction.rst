@@ -25,6 +25,6 @@ In the diagram, we connect the two variables to a term with a peculiar syntax. T
 
 These terms then get exposed, which means we can now connect to any other term as usual. In our case, we assign a new label for each, to satisfy Happy’s desires for weird names.
 
-And that is it. ASFALTO currently supports one type of abstraction breaking, but future versions can incorporate other types, depending on user feedback.
+And that is it. ``ASFALTO`` currently supports one type of abstraction breaking, but future versions can incorporate other types, depending on user feedback.
 
-If you made it here, congratulations! You have finished the user guide for ASFALTO and you now have a good idea of what the package is capable of doing. If you want to learn more about the functions in ASFALTO, you can check our API documentation. If you have ideas or want to contribute to the package, please refer to the About page.
+If you made it here, congratulations! You have finished the user guide for ``ASFALTO`` and you now have a good idea of what the package is capable of doing. If you want to learn more about the functions in ``ASFALTO``, you can check our API documentation. If you have ideas or want to contribute to the package, please refer to the About page.

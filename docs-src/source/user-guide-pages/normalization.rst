@@ -43,7 +43,7 @@ Bottom Up Abstraction
 
 Templates you include in a template can also refer to other templates. Leading to multilevel template references from the bottom-up! The diagram below illustrates how this is done on a simpler example:
 
-.. image:: /_static/null-vs-none-figures/fig-2.png
+.. image:: /_static/null-vs-none-figures/fig-3.png
         :width: 700
         :alt: diagrams illustrating the bottom-up abstraction concept
 **Figure 2.**  A diagram showing the concept of bottom-up abstraction. Each subsequent layer of templates are used to build the other, until you get to the top level.
